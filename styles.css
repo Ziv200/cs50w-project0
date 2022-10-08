@@ -1,0 +1,125 @@
+:root {
+    --text-black:rgba(0,0,0,.87);
+    --light: rgba(224, 224, 224, 0.3);
+  }
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+*:focus {
+    outline: none;
+}
+
+nav{
+    margin-top: 2rem;
+    margin-inline: 4rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+nav ul a{
+    text-decoration: none;
+    color:var(--text_black) ;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+
+.main{
+    text-align: center;
+    margin-top: 14rem;
+}
+
+.main img{
+    height:92px;
+    margin-bottom: 2rem;
+}
+
+.user_input{
+    height: 2.5rem;
+    border: 1px solid #afafaf;
+    margin-bottom: 2rem;
+    padding-inline: 3rem;
+    border-radius: 70px;
+
+    font-size: 1rem;
+}
+
+#textareaWicon{
+    background-image: url(images/search-interface-symbol.png);
+    background-size: 15px;
+    background-position: 15px ;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
+}
+
+.user_input:hover, .user_input:focus{
+    box-shadow: 1px 1px 13px 5px rgba(166,166,166,0.62);
+    -webkit-box-shadow: 1px 1px 13px 5px rgba(166,166,166,0.62);
+    -moz-box-shadow: 1px 1px 13px 5px rgba(166,166,166,0.62);
+}
+
+.btn{
+    padding:0.5rem;
+    padding-inline: 1rem;
+    border: none;
+    background-color:var(--light);
+    border-radius: 5px;
+    margin-inline: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.35);
+-webkit-box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.35);
+-moz-box-shadow: 1px -1px 10px 2px rgba(0,0,0,0.35);
+}
+
+.entry input{
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding-inline:1rem;
+}
+
+.entry input:hover{
+    box-shadow: none;
+}
+
+.entry input:focus{
+    box-shadow: none;
+    outline: 1px solid #0e3efe;
+}
+
+.entry p{
+    margin-bottom: 0.4rem;
+}
+
+.blue_btn{
+    margin-top:1rem;
+    background-color: #4d90fe;
+    border: 1px solid #2f5bb7;
+    color:white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    justify-self: center;
+    }
+
+.blue_btn:hover{
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+}
